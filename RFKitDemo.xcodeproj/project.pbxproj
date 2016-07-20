@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		5C63734E1D3F44E80064E0FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63734D1D3F44E80064E0FF /* main.m */; };
 		5C6373511D3F44E80064E0FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373501D3F44E80064E0FF /* AppDelegate.m */; };
-		5C6373541D3F44E80064E0FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373531D3F44E80064E0FF /* ViewController.m */; };
 		5C6373571D3F44E80064E0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6373551D3F44E80064E0FF /* Main.storyboard */; };
 		5C6373591D3F44E80064E0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6373581D3F44E80064E0FF /* Assets.xcassets */; };
 		5C63735C1D3F44E80064E0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C63735A1D3F44E80064E0FF /* LaunchScreen.storyboard */; };
 		5C6373671D3F44E80064E0FF /* RFKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373661D3F44E80064E0FF /* RFKitDemoTests.m */; };
 		5C6373721D3F44E80064E0FF /* RFKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373711D3F44E80064E0FF /* RFKitDemoUITests.m */; };
+		5C6373841D3F46A40064E0FF /* RFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373831D3F46A40064E0FF /* RFRootViewController.m */; };
+		5C63738A1D3F484C0064E0FF /* NSString+RFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373891D3F484C0064E0FF /* NSString+RFAdd.m */; };
+		5C63738D1D3F4A870064E0FF /* FoundtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63738C1D3F4A870064E0FF /* FoundtionViewController.m */; };
+		5C6373911D3F4CD90064E0FF /* UIDevice+RFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373901D3F4CD90064E0FF /* UIDevice+RFAdd.m */; };
+		5C6373951D3F52340064E0FF /* UIView+RFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373941D3F52340064E0FF /* UIView+RFAdd.m */; };
+		5C6373981D3F668E0064E0FF /* NSDate+RFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373971D3F668E0064E0FF /* NSDate+RFAdd.m */; };
+		5C63739B1D3F87020064E0FF /* UIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63739A1D3F87020064E0FF /* UIKitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +45,6 @@
 		5C63734D1D3F44E80064E0FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C63734F1D3F44E80064E0FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C6373501D3F44E80064E0FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C6373521D3F44E80064E0FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5C6373531D3F44E80064E0FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5C6373561D3F44E80064E0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C6373581D3F44E80064E0FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C63735B1D3F44E80064E0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,22 @@
 		5C63736D1D3F44E80064E0FF /* RFKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6373711D3F44E80064E0FF /* RFKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFKitDemoUITests.m; sourceTree = "<group>"; };
 		5C6373731D3F44E80064E0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C6373821D3F46A40064E0FF /* RFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRootViewController.h; sourceTree = "<group>"; };
+		5C6373831D3F46A40064E0FF /* RFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRootViewController.m; sourceTree = "<group>"; };
+		5C6373871D3F480A0064E0FF /* RFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFKit.h; sourceTree = "<group>"; };
+		5C6373881D3F484C0064E0FF /* NSString+RFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RFAdd.h"; sourceTree = "<group>"; };
+		5C6373891D3F484C0064E0FF /* NSString+RFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFAdd.m"; sourceTree = "<group>"; };
+		5C63738B1D3F4A870064E0FF /* FoundtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundtionViewController.h; sourceTree = "<group>"; };
+		5C63738C1D3F4A870064E0FF /* FoundtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundtionViewController.m; sourceTree = "<group>"; };
+		5C63738F1D3F4CD90064E0FF /* UIDevice+RFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+RFAdd.h"; sourceTree = "<group>"; };
+		5C6373901D3F4CD90064E0FF /* UIDevice+RFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+RFAdd.m"; sourceTree = "<group>"; };
+		5C6373921D3F51550064E0FF /* RFKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFKitMacro.h; sourceTree = "<group>"; };
+		5C6373931D3F52340064E0FF /* UIView+RFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RFAdd.h"; sourceTree = "<group>"; };
+		5C6373941D3F52340064E0FF /* UIView+RFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RFAdd.m"; sourceTree = "<group>"; };
+		5C6373961D3F668E0064E0FF /* NSDate+RFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFAdd.h"; sourceTree = "<group>"; };
+		5C6373971D3F668E0064E0FF /* NSDate+RFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFAdd.m"; sourceTree = "<group>"; };
+		5C6373991D3F87020064E0FF /* UIKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitViewController.h; sourceTree = "<group>"; };
+		5C63739A1D3F87020064E0FF /* UIKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,7 @@
 		5C6373401D3F44E80064E0FF = {
 			isa = PBXGroup;
 			children = (
+				5C6373851D3F47F00064E0FF /* RFKit */,
 				5C63734B1D3F44E80064E0FF /* RFKitDemo */,
 				5C6373651D3F44E80064E0FF /* RFKitDemoTests */,
 				5C6373701D3F44E80064E0FF /* RFKitDemoUITests */,
@@ -103,8 +124,10 @@
 			children = (
 				5C63734F1D3F44E80064E0FF /* AppDelegate.h */,
 				5C6373501D3F44E80064E0FF /* AppDelegate.m */,
-				5C6373521D3F44E80064E0FF /* ViewController.h */,
-				5C6373531D3F44E80064E0FF /* ViewController.m */,
+				5C6373821D3F46A40064E0FF /* RFRootViewController.h */,
+				5C6373831D3F46A40064E0FF /* RFRootViewController.m */,
+				5C63739D1D3F879D0064E0FF /* FoundationFile */,
+				5C63739C1D3F874E0064E0FF /* UIKitFile */,
 				5C6373551D3F44E80064E0FF /* Main.storyboard */,
 				5C6373581D3F44E80064E0FF /* Assets.xcassets */,
 				5C63735A1D3F44E80064E0FF /* LaunchScreen.storyboard */,
@@ -138,6 +161,57 @@
 				5C6373731D3F44E80064E0FF /* Info.plist */,
 			);
 			path = RFKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		5C6373851D3F47F00064E0FF /* RFKit */ = {
+			isa = PBXGroup;
+			children = (
+				5C6373871D3F480A0064E0FF /* RFKit.h */,
+				5C6373921D3F51550064E0FF /* RFKitMacro.h */,
+				5C6373861D3F47F00064E0FF /* Foundation */,
+				5C63738E1D3F4CBE0064E0FF /* UIKit */,
+			);
+			path = RFKit;
+			sourceTree = "<group>";
+		};
+		5C6373861D3F47F00064E0FF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5C6373881D3F484C0064E0FF /* NSString+RFAdd.h */,
+				5C6373891D3F484C0064E0FF /* NSString+RFAdd.m */,
+				5C6373961D3F668E0064E0FF /* NSDate+RFAdd.h */,
+				5C6373971D3F668E0064E0FF /* NSDate+RFAdd.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		5C63738E1D3F4CBE0064E0FF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5C63738F1D3F4CD90064E0FF /* UIDevice+RFAdd.h */,
+				5C6373901D3F4CD90064E0FF /* UIDevice+RFAdd.m */,
+				5C6373931D3F52340064E0FF /* UIView+RFAdd.h */,
+				5C6373941D3F52340064E0FF /* UIView+RFAdd.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5C63739C1D3F874E0064E0FF /* UIKitFile */ = {
+			isa = PBXGroup;
+			children = (
+				5C6373991D3F87020064E0FF /* UIKitViewController.h */,
+				5C63739A1D3F87020064E0FF /* UIKitViewController.m */,
+			);
+			name = UIKitFile;
+			sourceTree = "<group>";
+		};
+		5C63739D1D3F879D0064E0FF /* FoundationFile */ = {
+			isa = PBXGroup;
+			children = (
+				5C63738B1D3F4A870064E0FF /* FoundtionViewController.h */,
+				5C63738C1D3F4A870064E0FF /* FoundtionViewController.m */,
+			);
+			name = FoundationFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C6373541D3F44E80064E0FF /* ViewController.m in Sources */,
+				5C63739B1D3F87020064E0FF /* UIKitViewController.m in Sources */,
+				5C63738D1D3F4A870064E0FF /* FoundtionViewController.m in Sources */,
+				5C6373841D3F46A40064E0FF /* RFRootViewController.m in Sources */,
 				5C6373511D3F44E80064E0FF /* AppDelegate.m in Sources */,
+				5C6373951D3F52340064E0FF /* UIView+RFAdd.m in Sources */,
+				5C6373981D3F668E0064E0FF /* NSDate+RFAdd.m in Sources */,
+				5C6373911D3F4CD90064E0FF /* UIDevice+RFAdd.m in Sources */,
 				5C63734E1D3F44E80064E0FF /* main.m in Sources */,
+				5C63738A1D3F484C0064E0FF /* NSString+RFAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

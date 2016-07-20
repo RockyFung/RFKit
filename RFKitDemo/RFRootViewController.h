@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RFRootViewController.h
 //  RFKitDemo
 //
 //  Created by rocky on 16/7/20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RFRootViewController : UITableViewController
 
 @end
-
