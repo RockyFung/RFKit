@@ -171,6 +171,18 @@
     return isMatch;
 }
 
+
+- (BOOL)isNotBlank{
+    NSCharacterSet *blank = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    for (NSInteger i = 0; i < self.length; ++i) {
+        unichar c = [self characterAtIndex:i];
+        if (![blank characterIsMember:c]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 //根据金额得到相应的字符串 两位小数
 + (NSString *)moneyToString:(NSString *)money
 {

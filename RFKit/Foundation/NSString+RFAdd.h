@@ -50,7 +50,8 @@
 //字母
 + (BOOL)isAlphabet:(NSString *)strValue;
 
-
+// 是否为空 nil, @"", @"  ", @"\n" will Returns NO; otherwise Returns YES.
+- (BOOL)isNotBlank;
 
 
 

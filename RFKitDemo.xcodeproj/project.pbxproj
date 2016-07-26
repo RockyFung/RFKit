@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5DBAE81D4206E300B31961 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBAE71D4206E300B31961 /* MyViewController.m */; };
 		5C63734E1D3F44E80064E0FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63734D1D3F44E80064E0FF /* main.m */; };
 		5C6373511D3F44E80064E0FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6373501D3F44E80064E0FF /* AppDelegate.m */; };
 		5C6373571D3F44E80064E0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6373551D3F44E80064E0FF /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C5DBAE61D4206E300B31961 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		5C5DBAE71D4206E300B31961 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		5C6373491D3F44E80064E0FF /* RFKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C63734D1D3F44E80064E0FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C63734F1D3F44E80064E0FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 			children = (
 				5C6373991D3F87020064E0FF /* UIKitViewController.h */,
 				5C63739A1D3F87020064E0FF /* UIKitViewController.m */,
+				5C5DBAE61D4206E300B31961 /* MyViewController.h */,
+				5C5DBAE71D4206E300B31961 /* MyViewController.m */,
 			);
 			name = UIKitFile;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 				5C63738D1D3F4A870064E0FF /* FoundtionViewController.m in Sources */,
 				5C6373841D3F46A40064E0FF /* RFRootViewController.m in Sources */,
 				5C6373511D3F44E80064E0FF /* AppDelegate.m in Sources */,
+				5C5DBAE81D4206E300B31961 /* MyViewController.m in Sources */,
 				5C6373951D3F52340064E0FF /* UIView+RFAdd.m in Sources */,
 				5C6373981D3F668E0064E0FF /* NSDate+RFAdd.m in Sources */,
 				5C6373911D3F4CD90064E0FF /* UIDevice+RFAdd.m in Sources */,
@@ -578,6 +584,7 @@
 				5C6373781D3F44E80064E0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C6373791D3F44E80064E0FF /* Build configuration list for PBXNativeTarget "RFKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +593,7 @@
 				5C63737B1D3F44E80064E0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C63737C1D3F44E80064E0FF /* Build configuration list for PBXNativeTarget "RFKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +602,7 @@
 				5C63737E1D3F44E80064E0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,8 @@
 #import "UIKitViewController.h"
 
 @interface UIKitViewController ()
-
+@property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *classNames;
 @end
 
 @implementation UIKitViewController
@@ -17,39 +18,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.title = @"UIKit Demo";
+    self.titles = @[].mutableCopy;
+    self.classNames = @[].mutableCopy;
+    [self addCell:@"UIView" class:@"MyViewController"];
+//    [self addCell:@"UIKit" class:@"UIKitViewController"];
+}
+
+- (void)addCell:(NSString *)title class:(NSString *)className{
+    [self.titles addObject:title];
+    [self.classNames addObject:className];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.titles.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RFFoundation"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RFFoundation"];
+    }
+    cell.textLabel.text = _titles[indexPath.row];
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *className = self.classNames[indexPath.row];
+    Class class = NSClassFromString(className);
+    if (class) {
+        UIViewController *ctrl = class.new;
+        ctrl.title = self.titles[indexPath.row];
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 /*
 // Override to support conditional editing of the table view.

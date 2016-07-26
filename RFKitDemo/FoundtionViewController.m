@@ -29,7 +29,6 @@
     if (kSystemVersion < 7) {
         _scrollView.height -= 44;
     }
-    _scrollView.contentSize = CGSizeMake(self.view.width, self.view.height * 2);
     [self.view addSubview:_scrollView];
     
     _labelY = 10;
@@ -104,10 +103,13 @@
     line.backgroundColor = [UIColor colorWithWhite:0.5 alpha:1.0].CGColor;
     line.frame = CGRectMake(0, _labelY, self.view.width, 1);
     [_scrollView.layer addSublayer:line];
-    
     _labelY  += 10;
-    
 }
+
+- (void)viewDidLayoutSubviews{
+    _scrollView.contentSize = CGSizeMake(self.view.width, _labelY + 50);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

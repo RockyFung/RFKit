@@ -105,4 +105,57 @@
     self.frame = frame;
 }
 
+
+
+- (void)removeAllSubviews {
+    //[self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    while (self.subviews.count) {
+        [self.subviews.lastObject removeFromSuperview];
+    }
+}
+
+
+
+// 上左上右圆角
+- (UIView *)radiusWithAllCornerView:(UIView *)myView topLeftAndTopRightRadius:(CGFloat)radius{
+    UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:myView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *shape = [[CAShapeLayer alloc]init];
+    [shape setPath:round.CGPath];
+    myView.layer.mask = shape;
+    return myView;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

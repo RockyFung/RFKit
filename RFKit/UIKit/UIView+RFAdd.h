@@ -19,4 +19,10 @@
 @property (nonatomic) CGFloat centerY;     ///< Shortcut for center.y
 @property (nonatomic) CGPoint origin;      ///< Shortcut for frame.origin.
 @property (nonatomic) CGSize  size;        ///< Shortcut for frame.size.
+
+// 移除所有子视图
+- (void)removeAllSubviews;
+
+// 上左上右圆角
+- (UIView *)radiusWithAllCornerView:(UIView *)myView topLeftAndTopRightRadius:(CGFloat)radius;
 @end
