@@ -24,5 +24,16 @@
 - (void)removeAllSubviews;
 
 // 上左上右圆角
-- (UIView *)radiusWithAllCornerView:(UIView *)myView topLeftAndTopRightRadius:(CGFloat)radius;
+- (void)radiusWithTopLeftAndTopRightRadius:(CGFloat)radius;
+
+// 设置视图的阴影
+- (void)setLayerShadow:(nullable UIColor *)color offset:(CGSize)offset radius:(CGFloat)radius;
+
+
+
+
+
+
+
+
 @end

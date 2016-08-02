@@ -8,7 +8,12 @@
 
 #import "UIView+RFAdd.h"
 
+@interface UIView ()
+@property (nonatomic, copy) void(^clickBlock)(id sender);
+@end
 @implementation UIView (RFAdd)
+
+
 - (CGFloat)left {
     return self.frame.origin.x;
 }
@@ -117,19 +122,24 @@
 
 
 // 上左上右圆角
-- (UIView *)radiusWithAllCornerView:(UIView *)myView topLeftAndTopRightRadius:(CGFloat)radius{
-    UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:myView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(radius, radius)];
+- (void)radiusWithTopLeftAndTopRightRadius:(CGFloat)radius{
+    UIBezierPath *round = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(radius, radius)];
     CAShapeLayer *shape = [[CAShapeLayer alloc]init];
     [shape setPath:round.CGPath];
-    myView.layer.mask = shape;
-    return myView;
+    self.layer.mask = shape;
 }
 
 
 
-
-
-
+// 设置视图的阴影
+- (void)setLayerShadow:(nullable UIColor *)color offset:(CGSize)offset radius:(CGFloat)radius{
+    self.layer.shadowColor = color.CGColor;
+    self.layer.shadowOffset = offset;
+    self.layer.shadowRadius = radius;
+    self.layer.shadowOpacity = 1; // 阴影透明度
+    self.layer.shouldRasterize = YES;
+    self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+}
 
 
 

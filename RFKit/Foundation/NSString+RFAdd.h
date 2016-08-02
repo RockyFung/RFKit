@@ -17,6 +17,7 @@
 // 根据字符串计算高度
 - (CGFloat)heightForFont:(UIFont *)font width:(CGFloat)width;
 
+
 #pragma - 格式化
 // 价格千位符
 + (NSString *)thousandSeparatorWithPrice:(NSString *)price;

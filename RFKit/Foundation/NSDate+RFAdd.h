@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (RFAdd)
+
 @property (nonatomic, readonly) NSInteger year; ///< Year component
 @property (nonatomic, readonly) NSInteger month; ///< Month component (1~12)
 @property (nonatomic, readonly) NSInteger day; ///< Day component (1~31)

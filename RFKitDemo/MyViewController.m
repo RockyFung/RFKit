@@ -7,6 +7,7 @@
 //
 
 #import "MyViewController.h"
+#import "RFKit.h"
 
 @interface MyViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithWhite:0.86 alpha:1.0];
+    
+    UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(20, 100, 100, 100)];
+    view1.backgroundColor = [UIColor magentaColor];
+    [view1 radiusWithTopLeftAndTopRightRadius:20.0];
+    [view1 addTapActionOnViewBlock:^(id sender) {
+        
+    }];
+    [self.view addSubview:view1];
 }
 
 - (void)didReceiveMemoryWarning {
